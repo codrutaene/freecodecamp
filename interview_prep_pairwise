@@ -1,0 +1,16 @@
+function pairwise(arr, arg) {
+  var sum = 0;
+  var pairArr = arr.slice();
+  
+  for (let i = 0; i < pairArr.length - 1; i++) {
+    for (let j = i + 1; j < pairArr.length; j++) {
+      console.log("pair ", pairArr[i], pairArr[j]);
+      if (pairArr[i] + pairArr[j] === arg) {
+        sum += i + j;
+        pairArr[i] = pairArr[j] = NaN;
+      }
+    }
+  }
+  
+  return sum;
+}
