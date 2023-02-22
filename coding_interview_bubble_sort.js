@@ -5,7 +5,6 @@ function bubbleSort(array) {
     console.log(i);
     for (let j = i + 1; j < array.length; j++) {
       if (array[i] > array[j]) {
-        console.log("made it here");
         let adjVal = array[i];
         array[i] = array[j];
         array[j] = adjVal;
@@ -14,9 +13,6 @@ function bubbleSort(array) {
       }
     }
   }
-
-
-
   return array;
   // Only change code above this line
 }
